@@ -1,7 +1,7 @@
 Pinteresting::Application.routes.draw do
   resources :pins
 
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
   root "pages#home"  #creates the root_path
   get "about" => "pages#about"  #creates the about_path
   get "blog" => "pages#blog"  #creates the blog_path

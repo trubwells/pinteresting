@@ -32,6 +32,11 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 gem "devise", "~> 3.2.2"
 
 
+#Adding OmniAuth remote authenication
+gem "omniauth", "~> 1.1.4"
+gem "omniauth-facebook", "~> 1.5.1"
+gem "omniauth-twitter", "~> 1.0.1"
+
 group :development, :test do
 # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
